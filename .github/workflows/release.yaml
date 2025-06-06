@@ -9,10 +9,7 @@ on:
       - ".github/workflows/release.yaml"
   workflow_dispatch:
 
-permissions:
-  contents: write
-  pull-requests: write
-  issues: write
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
   release:
@@ -38,7 +35,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Version & Publish via Changesets
-        uses: changesets/action@v2
+        uses: changesets/action@v1
         with:
           publish: pnpm changeset publish --yes
         env:
