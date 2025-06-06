@@ -10,7 +10,7 @@
     "test": "turbo run test",
     "changeset": "changeset",
     "changeset:version": "changeset version",
-    "changeset:publish": "turbo clean && turbo build && changeset publish"
+    "changeset:publish": "turbo build && changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.29.4",
