@@ -1,0 +1,4 @@
+{
+  "extends": "@cf-kit/typescript-config/base.json",
+  "compilerOptions": {}
+}

@@ -1,0 +1,49 @@
+{
+  "name": "@cf-kit/images",
+  "version": "0.0.0",
+  "description": "Image optimization library for Cloudflare Workers with intelligent format negotiation (AVIF, WebP), smart R2 caching, and automatic variant selection",
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "images",
+    "image-processing",
+    "optimization",
+    "r2",
+    "storage",
+    "avif",
+    "webp",
+    "jpeg",
+    "png",
+    "caching",
+    "cdn",
+    "typescript",
+    "format-negotiation",
+    "variants",
+    "compression",
+    "edge-computing",
+    "serverless"
+  ],
+  "author": "hhhjin",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup --tsconfig tsconfig.json",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@cf-kit/typescript-config": "workspace:*"
+  },
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "vitest": "^3.2.2"
+  },
+  "peerDependencies": {
+    "@cloudflare/workers-types": "*"
+  }
+}
