@@ -1,6 +1,6 @@
 {
   "name": "@cf-kit/images",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Image optimization library for Cloudflare Workers with intelligent format negotiation (AVIF, WebP), smart R2 caching, and automatic variant selection",
   "keywords": [
     "cloudflare",
