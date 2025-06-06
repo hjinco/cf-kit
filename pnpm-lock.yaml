@@ -23,13 +23,13 @@ importers:
 
   packages/images:
     dependencies:
-      '@cf-kit/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
       '@cloudflare/workers-types':
         specifier: '*'
         version: 4.20250605.0
     devDependencies:
+      '@cf-kit/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       tsup:
         specifier: ^8.5.0
         version: 8.5.0(postcss@8.5.4)(typescript@5.8.2)
