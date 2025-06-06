@@ -39,10 +39,9 @@
     "build": "tsup --tsconfig tsconfig.json",
     "test": "vitest run"
   },
-  "dependencies": {
-    "@cf-kit/typescript-config": "workspace:*"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@cf-kit/typescript-config": "workspace:*",
     "tsup": "^8.5.0",
     "vitest": "^3.2.2"
   },
